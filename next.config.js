@@ -14,7 +14,7 @@ module.exports = {
     ignoreBuildErrors: true,
   },
   future: {
-    webpack5: true,
+    webpack5: false,
   },
   webpack: (config, {}) => {
       config.resolve.fallback = {
