@@ -9,7 +9,6 @@ const Hero = () => {
       <div>
         <h1 className={styles.title}>
           <span className={styles.nextjs}>CogitAuth</span>
-          <span className={styles.mongodb}></span>
           <span>Verify your Drops!</span>
         </h1>
         <Container justifyContent="center" className={styles.buttons}>
@@ -19,7 +18,6 @@ const Hero = () => {
             </Link>
           </Container>
 
-          </Container>
         </Container>
         <p className={styles.subtitle}>
           
