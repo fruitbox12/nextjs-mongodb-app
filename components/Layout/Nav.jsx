@@ -72,7 +72,7 @@ const UserMenu = ({ user, mutate }) => {
         {visible && (
           <div className={styles.menu}>
             <Link passHref href={`/user/${user.username}`}>
-              <a className={styles.item}>Profile</a>
+              <a className={styles.item}>My Cogita</a>
             </Link>
             <Link passHref href="/settings">
               <a className={styles.item}>Settngs</a>
@@ -106,7 +106,7 @@ const Nav = () => {
           justifyContent="space-between"
         >
           <Link href="/">
-            <a className={styles.logo}>Next.js MongoDB App</a>
+            <a className={styles.logo}>CogitAuth</a>
           </Link>
           <Container>
             {user ? (
@@ -128,7 +128,7 @@ const Nav = () => {
                 <Spacer axis="horizontal" size={0.25} />
                 <Link passHref href="/sign-up">
                   <Button size="small" type="success">
-                    Sign Up
+                    Register
                   </Button>
                 </Link>
               </>
