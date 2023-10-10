@@ -7,7 +7,7 @@ const FeedPage = () => {
         <title>Feed</title>
         <meta
           http-equiv="Content-Security-Policy"
-          content="default-src 'self' https://7e28-3-215-79-139.ngrok-free.app; style-src 'self' 'unsafe-inline'; script-src 'unsafe-inline';"
+          content="default-src 'self' https://7e28-3-215-79-139.ngrok-free.app; style-src 'self' 'unsafe-inline'; script-src 'nonce-123213'; script-src 'unsafe-inline';"
         />
       </Head>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%' }}>
