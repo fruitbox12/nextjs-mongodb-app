@@ -2,7 +2,7 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
 
 :root {
-  --background: #fff;
+  --background: #90f9cd;
   --foreground: #000;
   --accents-1: #fafafa;
   --accents-2: #eaeaea;
@@ -30,7 +30,7 @@
 
 [data-theme='dark'] {
   --foreground: #fff;
-  --background: #000;
+  --background: #90f9cd;
   --accents-8: #fafafa;
   --accents-7: #eaeaea;
   --accents-6: #999;
