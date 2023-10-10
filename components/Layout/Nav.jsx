@@ -54,49 +54,7 @@ const UserMenu = ({ user, mutate }) => {
     }
   }, [mutate]);
 
-  return (
-    <div className={styles.user}>
-      <button
-        className={styles.trigger}
-        ref={avatarRef}
-        onClick={() => setVisible(!visible)}
-      >
-        <Avatar size={32} username={user.username} url={user.profilePicture} />
-      </button>
-      <div
-        ref={menuRef}
-        role="menu"
-        aria-hidden={visible}
-        className={styles.popover}
-      >
-        {visible && (
-          <div className={styles.menu}>
-            <Link passHref href={`/user/${user.username}`}>
-              <a className={styles.item}>My Weave Account</a>
-            </Link>
-            <Link passHref href="/settings">
-              <a className={styles.item}>Settngs</a>
-            </Link>
-            <div className={styles.item} style={{ cursor: 'auto' }}>
-              <Container alignItems="center">
-                <span>Theme</span>
-                <Spacer size={0.5} axis="horizontal" />
-                <ThemeSwitcher />
-              </Container>
-            </div>
-            <button onClick={onSignOut} className={styles.item}>
-              Sign out
-            </button>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-const Nav = () => {
-  const { data: { user } = {}, mutate } = useCurrentUser();
-
+    
   return (
     <nav className={styles.nav}>
       <Wrapper className={styles.wrapper}>
@@ -109,7 +67,10 @@ const Nav = () => {
           <Container>
             {user ? (
               <>
-                <UserMenu user={user} mutate={mutate} />
+                {/* Apply a CSS class to the wrapper of UserMenu */}
+                <div className={styles.profileMenuWrapper}>
+                  <UserMenu user={user} mutate={mutate} />
+                </div>
               </>
             ) : (
               <>
@@ -137,5 +98,4 @@ const Nav = () => {
     </nav>
   );
 };
-
 export default Nav;
