@@ -5,15 +5,14 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
-    <Wrapper>
       <div>
         <h1 className={styles.title}>
-          <span className={styles.nextjs}>CogitAuth</span>
+          <span className={styles.nextjs}>Weave</span>
         </h1>
         <Container justifyContent="center" className={styles.buttons}>
           <Container>
             <Link passHref href="/feed">
-              <ButtonLink className={styles.button}>Explore Cogita Feeds</ButtonLink>
+              <ButtonLink className={styles.button}>Go to your Automation Hub</ButtonLink>
             </Link>
           </Container>
 
@@ -22,7 +21,6 @@ const Hero = () => {
           
         </p>
       </div>
-    </Wrapper>
   );
 };
 
