@@ -72,7 +72,7 @@ const UserMenu = ({ user, mutate }) => {
         {visible && (
           <div className={styles.menu}>
             <Link passHref href={`/user/${user.username}`}>
-              <a className={styles.item}>My Cogita</a>
+              <a className={styles.item}>My Weave Account</a>
             </Link>
             <Link passHref href="/settings">
               <a className={styles.item}>Settngs</a>
@@ -105,9 +105,7 @@ const Nav = () => {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Link href="/">
-            <a className={styles.logo}>CogitAuth</a>
-          </Link>
+       
           <Container>
             {user ? (
               <>
