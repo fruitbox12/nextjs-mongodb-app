@@ -13,7 +13,26 @@
   /* Align items to the right */
   display: flex;
   justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; /* Add padding to center content */
 }
+
+[data-theme='dark'] .nav {
+  box-shadow: inset 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+/* Align navigation items to the far right */
+.nav-items {
+  margin-left: auto;
+}
+
+/* ... Other CSS rules ... */
+
 
 [data-theme='dark'] .nav {
   box-shadow: inset 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
