@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>CogitAuth</title>
+        <title>weavedev</title>
         <meta
           key="viewport"
           name="viewport"
@@ -15,17 +15,14 @@ const Layout = ({ children }) => {
         />
         <meta
           name="description"
-          content="CogitAuthis a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
+          content="weavedev a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
         />
-        <meta property="og:title" content="CogitAuth" />
+        <meta property="og:title" content="weavedev" />
         <meta
           property="og:description"
-          content="CogitAuth is a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
+          content="weavedev is a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
         />
-        <meta
-          property="og:image"
-          content="https://cogita.io/cdn/shop/files/COGITA-WEB-LOGO_180x@2x.png?v=1680123528"
-        />
+
       </Head>
       <Nav />
       <main className={styles.main}>{children}</main>
